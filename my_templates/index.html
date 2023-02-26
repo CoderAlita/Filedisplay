@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>My Flask App</title>
+    <style>
+      ul{
+        list-style: none;
+      }
+      li{
+        border: 1px solid purple;
+        padding: 10px 15px;
+      }
+    </style>
+</head>
+<body>
+    <h1>Content of file</h1>
+  {{content["msg"]}}
+    <ul>
+        {% for item in content["content"] %}
+          <li class="line">{{ item }}</li>
+        {% endfor %}
+    </ul>
+        
+</body>
+</html>
