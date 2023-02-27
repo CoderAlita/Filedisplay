@@ -19,7 +19,7 @@
   {{content["msg"]}}
     <ul>
         {% for item in content["content"] %}
-          <li class="line">{{ item }}</li>
+          <li class="line">{{ item |safe }}</li>
         {% endfor %}
     </ul>
         
