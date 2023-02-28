@@ -8,10 +8,7 @@
       ul{
         list-style: none;
       }
-      li{
-        border: 1px solid purple;
-        padding: 10px 15px;
-      }
+      
     </style>
 </head>
 <body>
@@ -19,7 +16,7 @@
   {{content["msg"]}}
     <ul>
         {% for item in content["content"] %}
-          <li class="line">{{ item |safe }}</li>
+          <li>{{ item}}</li>
         {% endfor %}
     </ul>
         
